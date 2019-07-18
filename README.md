@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-party
 =============
 
@@ -18,9 +14,70 @@ Summary: A computational toolbox for recursive partitioning. The core of the pac
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-party-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-party-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-party-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-party-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-party-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-party-feedstock/branch/master)
+
+<table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1424&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-party-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_r_base3.5.1</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1424&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-party-feedstock?branchName=master&jobName=linux&configuration=linux_r_base3.5.1" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_r_base3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1424&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-party-feedstock?branchName=master&jobName=linux&configuration=linux_r_base3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_r_base3.5.1</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1424&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-party-feedstock?branchName=master&jobName=osx&configuration=osx_r_base3.5.1" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_r_base3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1424&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-party-feedstock?branchName=master&jobName=osx&configuration=osx_r_base3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_r_base3.5.1</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1424&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-party-feedstock?branchName=master&jobName=win&configuration=win_r_base3.5.1" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_r_base3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1424&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-party-feedstock?branchName=master&jobName=win&configuration=win_r_base3.6" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
+</table>
 
 Current release info
 ====================
@@ -114,9 +171,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bgruening](https://github.com/bgruening/)
-* [@cbrueffer](https://github.com/cbrueffer/)
-* [@daler](https://github.com/daler/)
-* [@jdblischak](https://github.com/jdblischak/)
-* [@johanneskoester](https://github.com/johanneskoester/)
+* [@conda-forge/r](https://github.com/conda-forge/r/)
 
