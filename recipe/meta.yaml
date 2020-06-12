@@ -1,4 +1,4 @@
-{% set version = "1.3-4" %}
+{% set version = "1.3-5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/party_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/party/party_{{ version }}.tar.gz
-  sha256: 7689bd4fe7968ef1981147c5ad11237d630eddd5789a05c090339898eff71e7f
+  sha256: 1c3a35d3fe56498361542b3782de2326561c14a8fa1b76f3c9f13beb1fd51364
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -55,13 +55,10 @@ test:
 about:
   home: http://party.R-forge.R-project.org
   license: GPL-2
-  summary: A computational toolbox for recursive partitioning. The core of the package is ctree(), an implementation of conditional inference trees which embed tree-structured  regression
-    models into a well defined theory of conditional inference procedures. This non-parametric class of regression trees is applicable to all kinds of regression
-    problems, including nominal, ordinal, numeric, censored as well as multivariate response variables and arbitrary measurement scales of the covariates.  Based
-    on conditional inference trees, cforest() provides an implementation of Breiman's random forests. The function mob() implements an algorithm for recursive partitioning
-    based on parametric models (e.g. linear models, GLMs or survival regression) employing parameter instability tests for split selection. Extensible functionality
-    for visualizing tree-structured regression models is available. The methods are described in Hothorn et al. (2006) <doi:10.1198/106186006X133933>, Zeileis et
-    al. (2008) <doi:10.1198/106186008X319331> and  Strobl et al. (2007) <doi:10.1186/1471-2105-8-25>.
+  summary: A computational toolbox for recursive partitioning. The core of the package is ctree(), an implementation of conditional inference trees which embed tree-structured  regression models into a well defined theory of conditional inference procedures. This non-parametric class of regression trees is applicable to
+    all kinds of regression problems, including nominal, ordinal, numeric, censored as well as multivariate response variables and arbitrary measurement scales of the covariates.  Based on conditional inference trees, cforest() provides an implementation of Breiman's random forests. The function mob() implements an algorithm
+    for recursive partitioning based on parametric models (e.g. linear models, GLMs or survival regression) employing parameter instability tests for split selection. Extensible functionality for visualizing tree-structured regression models is available. The methods are described in Hothorn et al. (2006) <doi:10.1198/106186006X133933>,
+    Zeileis et al. (2008) <doi:10.1198/106186008X319331> and  Strobl et al. (2007) <doi:10.1186/1471-2105-8-25>.
   license_family: GPL2
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
