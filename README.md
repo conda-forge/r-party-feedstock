@@ -3,7 +3,7 @@ About r-party
 
 Home: http://party.R-forge.R-project.org
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-party-feedstock/blob/master/LICENSE.txt)
 
