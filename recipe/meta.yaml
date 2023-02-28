@@ -1,4 +1,4 @@
-{% set version = "1.3-11" %}
+{% set version = "1.3-12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/party_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/party/party_{{ version }}.tar.gz
-  sha256: 3ea41a1775d40bc6d0bdf657b98d939d99f98925ac985a31c969735c56618c9c
+  sha256: 0f686d24e866653e804e473dc26ef0befd7a43f68e718841848bbd864c97cb3f
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
