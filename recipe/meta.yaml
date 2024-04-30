@@ -1,4 +1,4 @@
-{% set version = "1.3-14" %}
+{% set version = "1.3-15" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/party_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/party/party_{{ version }}.tar.gz
-  sha256: bc30975c97826aa68a839df63a2fc977473a8a144ec66ae95618e385da470867
+  sha256: c0e27c2e215526ba67879570fe4ac8c1fad34128e3785e26b4b86307cfad2217
 
 build:
   merge_build_host: true  # [win]
@@ -22,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("c") }}                # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
