@@ -1,4 +1,4 @@
-{% set version = "1.3-16" %}
+{% set version = "1.3-17" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/party_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/party/party_{{ version }}.tar.gz
-  sha256: ae691a65a76407635b0d91abf5b28c41038a207df57cc084409ca92184cae186
+  sha256: f0e076b1e743cf50274b57d3a69526461fac5e499fc33d73825f293076f27d4b
 
 build:
   number: 0
