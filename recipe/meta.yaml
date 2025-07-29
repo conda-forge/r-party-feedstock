@@ -12,10 +12,14 @@ source:
   sha256: 1ef77413a27897f8f884ea5d87cb87a0ce8f3169c2baaabde03aace0409956a7
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -27,15 +31,16 @@ requirements:
     - r-zoo                      # [build_platform != target_platform]
     - r-modeltools               # [build_platform != target_platform]
     - r-mvtnorm                  # [build_platform != target_platform]
-    - {{ compiler('c') }}              # [not win]
-    - {{ stdlib("c") }}                # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ stdlib("c") }}                # [win]
-    - {{ posix }}filesystem        # [win]
+    - {{ compiler('c') }}        # [not win]
+    - {{ stdlib("c") }}          # [not win]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ stdlib("c") }}          # [win]
+    - {{ compiler('fortran') }}  # [osx]
+    - {{ posix }}filesystem      # [win]
     - {{ posix }}make
-    - {{ posix }}sed               # [win]
-    - {{ posix }}coreutils         # [win]
-    - {{ posix }}zip               # [win]
+    - {{ posix }}sed             # [win]
+    - {{ posix }}coreutils       # [win]
+    - {{ posix }}zip             # [win]
   host:
     - r-base
     - r-coin >=1.1_0
